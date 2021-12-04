@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Domine:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/background.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>HoangDuc</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Portofolio</a>
+          </li>
+          <li>
+            <a href="">News</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+        <button>Buy now</button>
+      </nav>
+      <div class="bar" onclick="showNavMobile()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="nav-mobile" id="nav-mobile">
+        <div class="close" onclick="close()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+          <li>About us</li>
+          <li>Home</li>
+          <li>Portofolio</li>
+          <li>New</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="background" id="particles-js">
+      <div class="wrapper">
+        <div class="background__content">
+          <div class="background__content__name">
+            <h1>Hoang Duc</h1>
+          </div>
+          <div class="background__content__skill">
+            <ul>
+              <li>Full stack overflow</li>
+              <li>An khong ngoi roi</li>
+            </ul>
+          </div>
+          <div class="background__content__from">
+            <h1>Based in HCM City.</h1>
+          </div>
+          <div class="background__content__contact">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/ducccccccc"
+              title="Duc's facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+              <span>Connect to Duc</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="info__about">
+        <div class="info__about__container">
+          <div class="info__about__container__inner">
+            <div class="left">
+              <img src="image/b.jpg" alt="" />
+            </div>
+            <div class="right">
+              <h5>ABOUT ME!</h5>
+              <h1>Creative Independent Web Developer based in SG</h1>
+              <p>
+                I'm a web designer, and I'm very passionate and dedicated to my
+                work. With 20 years experience as a professional web developer,
+                I have acquired the skills and knowledge necessary to make your
+                project a success. I enjoy every step of the design process,
+                from discussion and collaboration.
+              </p>
+              <button>Download CV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio">
+      <div class="portfolio__wrap">
+        <div class="portfolio__wrap__container">
+          <div class="portfolio__wrap__container__position">
+            <div class="portfolio__wrap__container__position__title">
+              <div class="title__left">
+                <span>PORTFOLIO</span>
+                <h2>Creative Portfolio</h2>
+              </div>
+              <div class="title__right">
+                <ul>
+                  <li id="first"><a href="">All</a></li>
+                  <li><a href="">Design</a></li>
+                  <li><a href="">Branding</a></li>
+                  <li><a href="">Photography</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="portfolio__wrap__container__position__filter">
+              <div class="gallery">
+                <ul>
+                  <li>
+                    <a href="">
+                      <img
+                        src="https://shanereact.ibthemespro.com/img/portfolio/1.jpg"
+                        alt=""
+                      />
+                    </li></a>
+                  <li>
+                    <a href="">
+                      <img
+                        src="https://shanereact.ibthemespro.com/img/portfolio/2.jpg"
+                        alt=""
+                      /></a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="https://shanereact.ibthemespro.com/img/portfolio/14.jpg"
+                        alt=""
+                      /></a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="https://shanereact.ibthemespro.com/img/portfolio/22.jpg"
+                        alt=""
+                      /></a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="https://shanereact.ibthemespro.com/img/portfolio/7.jpg"
+                        alt=""
+                      /></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="facebook.com">
+                      <img
+                        src="https://shanereact.ibthemespro.com/img/portfolio/3.jpg"
+                        alt=""
+                      /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="technique">
+      <div class="technique__contain">
+        <div class="technique__container">
+          <div class="left-tech">
+            <h2>I have high skills in developing and programming</h2>
+            <p>I am working on a professional, visually sophisticated and technologically proficient, responsive and multi-functional personal portfolio template Duc.</p>
+          </div>
+          <div class="right-tech">
+            <div class="progress">
+              <div class="progress-inner">
+                <span>
+                  <span>Web Developer</span>
+                  <span>95%</span>
+                </span>
+                <div class="background-bar">
+                  <div class="bar">
+                    <div class="bar_in" style="width: 95%;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-inner">
+                <span>
+                  <span>Brand Identity</span>
+                  <span>80%</span>
+                </span>
+                <div class="background-bar">
+                  <div class="bar">
+                    <div class="bar_in" style="width: 80%;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-inner">
+                <span>
+                  <span>Logo Design</span>
+                  <span>90%</span>
+                </span>
+                <div class="background-bar">
+                  <div class="bar">
+                    <div class="bar_in" style="width: 90%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deli">
+      <div class="business">
+        <div class="background__image">
+          <div class="bg"></div>
+          <div class="overlay"></div>
+        </div>
+        <div class="content">
+          <h1>I am delivering beautiful digital products for my clients</h1>
+          <button>Watch Video</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./js/app.js"></script>
+
+    <script>
+      function showNavMobile() {
+        document.getElementById("nav-mobile").style.transform = "none";
+      }
+      function close() {
+        document.getElementById("nav-mobile").style.transform =
+          "translateX(-100%)";
+      }
+    </script>
+  </body>
+</html>
